@@ -12,14 +12,14 @@ function gradeOnAverage( int $subject1, int $subject2, int $subject3, int $subje
     case ( $subject3 < 0 || $subject3 > 100 ):
     case ( $subject4 < 0 || $subject4 > 100 ):
     case ( $subject5 < 0 || $subject5 > 100 ):
-        echo "Invalid Marks Range. Marks Must be Between 0 and 100.\n";
+        echo "Invalid Marks Range. Marks Must be Between 0 and 100. \n";
         return;
     }
 
     // Check if Any Subject has Bellow 33
     switch ( true ) {
     case ( $subject1 < 33 || $subject2 < 33 || $subject3 < 33 || $subject4 < 33 || $subject5 < 33 ):
-        echo "You have Failed. Your Grade is F\n";
+        echo "You have Failed. Your Grade is F \n";
         return;
     }
 
@@ -50,9 +50,9 @@ function gradeOnAverage( int $subject1, int $subject2, int $subject3, int $subje
     }
 
     // If All are Fine Echo the Result
-    echo "Total Marks: {$total}\n";
-    echo "Average Marks: {$average}\n";
-    echo "Grade: {$grade}\n";
+    echo "Total Marks: {$total} \n";
+    echo "Average Marks: {$average} \n";
+    echo "Grade: {$grade} \n";
 }
 
 // Calling The Function with Arguments
