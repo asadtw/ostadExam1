@@ -56,4 +56,4 @@ function gradeOnAverage( int $subject1, int $subject2, int $subject3, int $subje
 }
 
 // Calling The Function with Arguments
-gradeOnAverage( 80, 100, 85, 50, 100 );
+gradeOnAverage( 33, 85, 89, 90, 91 );
