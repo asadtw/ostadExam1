@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 01 | Registration Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            background: rgb(103, 124, 233);
+            background: -moz-linear-gradient(45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            background: -webkit-linear-gradient(45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            background: linear-gradient(45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#677ce9", endColorstr="#744da3", GradientType=1);
+            font-family: "Oswald", sans-serif;
+            font-size: 16px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .form-wrap {
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            position: absolute;
+            width: 800px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            margin-bottom: 22px;
+        }
+
+        .field-wrap {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        input:not(input[type="radio"]):not(input[type="button"]) {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 6px;
+            outline: 0px;
+            color: #000;
+            font-size: 14px;
+        }
+        input:not(input[type="radio"]):not(input[type="button"]) {
+            
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 500;
+            min-width: 140px;
+        }
+
+        .radio-wrap p {
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .radio-wrap label {
+            margin-right: 10px;
+            margin-left: 3px;
+            font-weight: 400;
+        }
+
+        input[type="button"] {
+            border: 0 none;
+            outline: 0 none;
+            padding: 15px 40px;
+            padding-bottom: 18px;
+            border-radius: 6px;
+            margin-right: 10px;
+            font-size: 18px;
+            font-family: "Oswald", sans-serif;
+            line-height: 1;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .cancel-btn {
+            background: #FD5E58;
+        }
+
+        .cancel-btn:hover {
+            background: #e34944;
+        }
+
+        .submit-btn {
+            background: rgb(103, 124, 233);
+            background: -moz-linear-gradient(45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            background: -webkit-linear-gradient(45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            background: linear-gradient(45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#677ce9", endColorstr="#744da3", GradientType=1);
+        }
+
+        .submit-btn:hover {
+            background: rgb(103, 124, 233);
+            background: -moz-linear-gradient(-45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            background: -webkit-linear-gradient(-45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            background: linear-gradient(-45deg, rgba(103, 124, 233, 1) 0%, rgba(116, 77, 163, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#677ce9", endColorstr="#744da3", GradientType=1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-wrap">
+        <div class="section-title">
+            <h2 class="title">Registration</h2>
+        </div>
+        <form action="" class="form">
+            <div class="form-row">
+                <div class="field-wrap">
+                    <label for="fname">Full Name</label>
+                    <input type="text" placeholder="Enter Your Name" name="fname" id="fname">
+                </div>
+                <div class="field-wrap">
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Your Username" name="uname" id="uname">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="field-wrap">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Your Email" name="email" id="email">
+                </div>
+                <div class="field-wrap">
+                    <label for="pnumber">Phone Number</label>
+                    <input type="text" placeholder="Enter Your Number" name="pnumber" id="pnumber">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="field-wrap">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter Your Password" name="password" id="password">
+                </div>
+                <div class="field-wrap">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Your Password" name="cpassword" id="cpassword">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="radio-wrap">
+                    <p>Gender</p>
+                    <input type="radio" id="radio1" name="radio" value="Male">
+                    <label for="radio1">Male</label>
+                    <input type="radio" id="radio2" name="radio" value="Female">
+                    <label for="radio2">Female</label>
+                    <input type="radio" id="radio3" name="radio" value="Other">
+                    <label for="radio3">Other</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="button-wrap">
+                    <input type="button" value="Cancel" class="cancel-btn">
+                    <input type="button" value="Submit" class="submit-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
